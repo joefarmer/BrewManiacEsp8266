@@ -8,7 +8,7 @@
 /**************************************************************************************/
 
 //1. I2C LCD only. check the address
-//#define LCD_I2C_ADDR 0x3F
+#define LCD_I2C_ADDR 0x27
 
 
 #define NODEMCU_PIN_A0 17	// Analog
