@@ -10,8 +10,8 @@
 #define NODEMCU_PIN_D2 4	 [I/O]SDA // I2C
 #define NODEMCU_PIN_D3 0
 #define NODEMCU_PIN_D4 2
-#define NODEMCU_PIN_D5 14    Pump
-#define NODEMCU_PIN_D6 12    Sensor
+#define NODEMCU_PIN_D5 14    Sensor
+#define NODEMCU_PIN_D6 12    Pump
 #define NODEMCU_PIN_D7 13    Heater
 #define NODEMCU_PIN_D8 15    AuxHeater
 */
@@ -31,7 +31,7 @@
 
 #define I2C_SCL NODEMCU_PIN_D1
 #define I2C_SDA NODEMCU_PIN_D2
-#define SensorPin    NODEMCU_PIN_D6
+#define SensorPin    NODEMCU_PIN_D5
 
 
 #define AuxHeatControlPin NODEMCU_PIN_D8
@@ -67,7 +67,7 @@
 #endif
 
 #if PUMP_USE_EXT != true
-#define PumpControlPin  NODEMCU_PIN_D5
+#define PumpControlPin  NODEMCU_PIN_D6
 #else
 #define ExPumpControlPin  5
 #endif
